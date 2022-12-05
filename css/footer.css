@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+    --arvo-font: "Arvo", serif;
+    --poppins-font: "Poppins", sans-serif;
+    --nav-link: #553320;
+    --navbar: #edd1c1;
+    --background: #f6e8e0;
+}
+*{
+    box-sizing: border-box;
+}
+footer{
+    margin-top: 50px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 50px 10px 50px;
+    color: var(--nav-link);
+    background-color: var(--navbar);
+    height: auto;
+}
+.footer > *{
+    flex: 1 100% ;
+}
+.footer-left{
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 5px;
+}
+.footer-left .logo{
+    width: 50%;
+    font-family: var(--arvo-font);
+}
+h2{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: var(--arvo-font);
+
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+
+}
+.footer a{
+    text-decoration: none;
+    font-family: var(--poppins-font);
+}
+.footer-right{
+    
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-right > *{
+    flex: 1 50%;
+    margin: 1.25em;
+}
+.box a{
+    color: var(--nav-link);
+}
+.footer-bottom {
+    width: 80%;
+    text-align: center;
+    color: var(--nav-link);
+    margin-top: -20px;
+    padding-bottom: 5px;
+}
+.footer-bottom p{
+    font-size: 15px;
+}
+.socials{
+    margin-left: 30px;
+}
+.socials a{
+    border-radius: 30px;
+    background-color: var(--background);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+   
+}
+.socials a {
+    color: var(--nav-link);
+    padding: 2px 2px 2px 5px; 
+    font-size: 20px;
+    
+}
+@media screen and (min-width: 800px){
+    .footer-right >*{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .footer{
+      padding: 15px;
+    }
+    
+  }
